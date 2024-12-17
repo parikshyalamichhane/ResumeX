@@ -1,0 +1,74 @@
+/* src/pages/Home.css */
+
+/* Basic layout */
+.home-container {
+    background-color: #f4f7f6;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Add some styles to the sections */
+  .section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .section h2 {
+    font-size: 28px;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Add some responsive styles */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    .section {
+      padding: 15px;
+    }
+  
+    .section h2 {
+      font-size: 24px;
+    }
+  
+    .section p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Styling for the call-to-action button */
+  .call-to-action {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .call-to-action:hover {
+    background-color: #0056b3;
+  }
+  
