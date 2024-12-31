@@ -1,23 +1,31 @@
-// src/pages/About.js
 import React from 'react';
 import './About.css';
 
 function About() {
   return (
     <div className="about-container">
-      <h1>ResumeX</h1>
-      <p>
-        ResumeX is a platform designed to help job seekers and recruiters in the hiring process.
-        Our AI-powered resume ranking system analyzes resumes based on skills, qualifications, and experience to ensure that candidates are matched with the best opportunities.
-      </p>
-      <p>
-        Whether you're a job seeker looking for your next career opportunity or a recruiter seeking the perfect candidate, ResumeX streamlines the process, making it easier and faster for everyone.
-      </p>
-      <h2>Our Mission</h2>
-      <p>
-        Our mission is to create a seamless and effective platform that connects job seekers with recruiters,
-        ensuring that every candidate gets the opportunity they deserve while helping recruiters find the best talent quickly.
-      </p>
+      <div className="about-box">
+        <h1 className="box-title">ResumeX</h1>
+      </div>
+      <section className="about-content">
+        <p>
+          ResumeX is a platform designed to revolutionize the hiring process for both job seekers and recruiters.
+          With our AI-powered resume ranking system, finding the perfect opportunity or candidate has never been easier.
+        </p>
+        <p>
+          Our advanced algorithms analyze resumes based on skills, qualifications, and experience to ensure seamless matching
+          between candidates and recruiters. Say goodbye to tedious searches and hello to smarter hiring!
+        </p>
+      </section>
+      <div className="mission-box">
+        <h2 className="box-title">Our Mission</h2>
+      </div>
+      <section className="mission-content">
+        <p>
+          To bridge the gap between job seekers and recruiters by providing a fast, efficient, and transparent platform that
+          highlights the best opportunities and talent. At ResumeX, we believe in making dreams a reality, one match at a time.
+        </p>
+      </section>
     </div>
   );
 }

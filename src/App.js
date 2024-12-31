@@ -1,19 +1,22 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Router for routing
-import { Link } from "react-router-dom"; // Used for navigation links
-import Footer from "./Footer"; // Import Footer component correctly
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Footer from "./Footer"; // Import Footer component
 import "./App.css"; // Import your CSS file
 
-// Components for different pages
-import Home from "./pages/Home";  // Home component in pages folder
-import About from "./pages/About";  // About component in pages folder
-import Contact from "./pages/Contact";  // Contact component in pages folder
+// Import pages/components
+import CandidateDashboard from './pages/CandidateDashboard';  // Candidate dashboard
+import CandidateLogin from './pages/CandidateLogin';  // Candidate login page
+import Home from "./pages/Home";  // Home page
+import About from "./pages/About";  // About page
+import Contact from "./pages/Contact";  // Contact page
 
 function App() {
   return (
     <Router>
       <div className="App">
+        {/* Header Section */}
         <header className="App-header">
           <div className="navbar">
             <div className="brand">
@@ -23,19 +26,25 @@ function App() {
               <Link to="/" className="nav-link">Home</Link>
               <Link to="/about" className="nav-link">About</Link>
               <Link to="/contact" className="nav-link">Contact</Link>
+              
             </nav>
           </div>
         </header>
 
+        {/* Main Content Section */}
         <main className="main-content">
           <Routes>
+            {/* Define routes for pages */}
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/candidate-login" element={<CandidateLogin />} /> {/* Candidate login */}
+            <Route path="/candidate-dashboard" element={<CandidateDashboard />} /> {/* Candidate dashboard */}
           </Routes>
         </main>
 
-        <Footer /> {/* Include Footer here */}
+        {/* Footer Section */}
+        <Footer />
       </div>
     </Router>
   );
