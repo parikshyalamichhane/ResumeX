@@ -26,22 +26,24 @@ function Home() {
       </header>
 
       <section className="why-resumex">
-        <h2>Why Choose <span className="brand-name">ResumeX?</span></h2>
-        <p>
-          Transform your job search experience with advanced AI tools and customizable templates.
-        </p>
-        <p>Stand out and land your dream job faster!</p>
-      </section>
+  <h2>Why Choose <span className="brand-name">ResumeX?</span></h2>
+  <p>
+    Revolutionize your career journey with ResumeX, where cutting-edge AI meets effortless job matching.
+  </p>
+  <p>
+    Empowering candidates to shine and helping recruiters find the perfect fit faster than ever!
+  </p>
+</section>
+<section className="features">
+  <h2>Our Features</h2>
+  <ul>
+    <li>Easy-to-use interface.</li>
+    <li>Seamless resume submission process.</li>
+    <li>Efficient job matching for candidates and recruiters.</li>
+  </ul>
+  <a href="/about" className="call-to-action">Explore More Features</a>
+</section>
 
-      <section className="features">
-        <h2>Our Features</h2>
-        <ul>
-          <li>Easy-to-use interface</li>
-          <li>Customizable, industry-specific templates</li>
-          <li>AI suggestions tailored to your skills</li>
-        </ul>
-        <a href="/about" className="call-to-action">Explore More Features</a>
-      </section>
 
       <div className="cta-section">
         <h3>Get Started</h3>

@@ -8,21 +8,42 @@ const jobs = [
     title: 'Frontend Developer',
     company: 'TechCorp',
     description: 'Develop and maintain user-facing features for web applications.',
-    image: '/images/frontend-job.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMSAsYbMQ00_QH-KYkbhuW9AjiHR_v3e9SvNFIW7k0513Z9kj2tPNCuU&s',
   },
   {
     id: 2,
     title: 'Backend Developer',
     company: 'Innovatech',
     description: 'Build and optimize server-side applications and APIs.',
-    image: '/images/backend-job.jpg',
+    image: 'https://images.pexels.com/photos/140945/pexels-photo-140945.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 3,
     title: 'Data Scientist',
     company: 'DataWiz',
     description: 'Analyze and interpret complex data to solve business challenges.',
-    image: '/images/data-job.jpg',
+    image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 4,
+    title: 'UI/UX Designer',
+    company: 'DesignPro',
+    description: 'Create user-friendly and visually appealing designs for web and mobile platforms.',
+    image: 'https://images.pexels.com/photos/326518/pexels-photo-326518.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 5,
+    title: 'DevOps Engineer',
+    company: 'CloudSync',
+    description: 'Streamline and automate software development and deployment processes.',
+    image: 'https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 6,
+    title: 'Cybersecurity Analyst',
+    company: 'SecureNet',
+    description: 'Monitor and improve the security of company systems and data.',
+    image: 'https://images.pexels.com/photos/5380589/pexels-photo-5380589.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
 ];
 
@@ -51,7 +72,7 @@ function CandidateDashboard() {
 
   return (
     <div className="dashboard-container">
-      <h1>Welcome to Your Dashboard</h1>
+      <h1>Your Dream Job, Just a Click Away!</h1>
       {!selectedJob ? (
         <div className="job-list">
           {jobs.map((job) => (
